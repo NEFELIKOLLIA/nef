@@ -58,12 +58,12 @@ https://www.youtube.com/watch?v=OwPXH4gZitw&list=RDOwPXH4gZitw&start_radio=1.
 
 (Μια Raga στην καρνατική μουσική ορίζει τους κανόνες για να φτιαχτεί μια μελωδία. Η Raga Maya Malava Goula  είναι η πιο βασική Raga της καρνατικής μουσικής. Είναι αυτή με την οποία  ξεκινάει η εκπαίδευση εκείνων που θέλουν να μάθουν αυτή τη μουσική. Ο πρώτος λόγος είναι ότι αποτελείται και από τα 7 swaras έχει  και aarohanam (αύξουσα κλίμακα) και avarohanam και ο δεύτερος είναι η συμμετρία.)
 
-(φτιάχνω την κλίμακα και με το όνομα που της εχω δώσει italics mayamalavagoula italics θα παίξω τα patterns).
+(φτιάχνω την κλίμακα και με το όνομα που της εχω δώσει mayamalavagoula θα παίξω τα patterns).
 
-**Scale.all.put(\*mayamalavagoula*, Scale([0, 1, 4, 5, 7, 8, 11]));**
+**Scale.all.put(\mayamalavagoula, Scale([0, 1, 4, 5, 7, 8, 11]));**
 
 **Pbind(\dur,~durs, \degree, Pseq([~pat1, ~pat1 + 4, ~pat1 + 7]), \amp, 0.2,
-	\scale, Scale.*mayamalavagoula*
+	\scale, Scale.mayamalavagoula
 ).play; **
 
 
@@ -87,18 +87,19 @@ https://www.youtube.com/watch?v=OwPXH4gZitw&list=RDOwPXH4gZitw&start_radio=1.
 (Αντικαθιστώ το dur με ένα pattern, όπου η κάθε νότα θα παίρνει την διάρκεια από το pattern και η τελευταία νότα θα  έχει μεγαλύτερη διάρκεια. Χρησιμοποιώ την μεταβλητή ~durs για το pattern. Χρησιμοποιώ το trace μαζί με το play έτσι ώστε να βλέπω στο post window την εκτέλεση του).
 
 Επειδή ήθελα να δοκιμάσω και  μια ακόμα Raga έφτιαξα Shankarabharanam από το video  (2.5 sec)
+
 https://www.youtube.com/watch?v=OwPXH4gZitw&list=RDOwPXH4gZitw&start_radio=1
 
-(Φτιάχνω την κλίμακα *shankarabharanam*)
-**Scale.all.put(\*shankarabharanam*, Scale([0, 2, 4, 5, 7, 9, 11]));**
+(Φτιάχνω την κλίμακα shankarabharanam)
+**Scale.all.put(\shankarabharanam, Scale([0, 2, 4, 5, 7, 9, 11]));**
 
 **Pbind(\dur,~durs, \degree, Pseq([~pat2 + 7,~pat2 + 4, ~pat2]), \amp, 0.2,
-	\scale, Scale.*shankarabharanam*
+	\scale, Scale.shankarabharanam
 ).play;**
 
-Θα τρέξω το ίδιο pattern και με τη κλίμακα *mayamalavagoula* που έχω φτιάξει στο προηγούμενο pattern
+Θα τρέξω το ίδιο pattern και με τη κλίμακα mayamalavagoula που έχω φτιάξει στο προηγούμενο pattern
 **Pbind(\dur,~durs, \degree, Pseq([~pat2 + 7,~pat2 + 4, ~pat2]), \amp, 0.2,
-	\scale, Scale.*mayamalavagoula*
+	\scale, Scale.mayamalavagoula
 ).play;**
 
 
