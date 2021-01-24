@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=ESCbw9Ph9m4&list=RDZnObqYfb-0M&index=13
  **Pbind(\dur, 0.2, \degree, Pseq([0, 1, 0, 2, 1, 3, 2, 1, 0], 1), \amp, 0.2).play;**
  (Φτιάχνω το πρώτο pattern, σαν λίστα 0, 1, 0, 2, 1, 3, 2, 1, 0 το οποίο παίζει μια φορά)
  
-** ~pat1 = Pseq([0, 1, 0, 2, 1, 3, 2, 1, 0], 1); **
+**~pat1 = Pseq([0, 1, 0, 2, 1, 3, 2, 1, 0], 1);**
  (για διευκόλυνση βάζω το pattern στη μεταβλητή ~pat1 και στη συνέχεια θα χρησιμοποιώ αυτήν)
  
  **Pbind(\dur, 0.2, \degree, ~pat1 + 4, \amp, 0.2).play;**
