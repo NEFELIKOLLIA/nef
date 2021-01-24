@@ -9,8 +9,10 @@
 
 
 **Περιγραφή**
+
 Εχω επιλέξει δυο pattern απο το video 
-https://www.youtube.com/watch?v=ESCbw9Ph9m4&list=RDZnObqYfb-0M&index=13 
+https://www.youtube.com/watch?v=ESCbw9Ph9m4&list=RDZnObqYfb-0M&index=13. 
+
 Θα ξεκινήσω φτιάχνοντας ενα απλό Pattern. Θα δείξω τον τρόπο οπου το pattern αυτό μπορώ να το μεταθέσω σε ψηλότερες συχνότητες,
 
 Θα προσθέσω κλίμακες στο κώδικα  και θα παίξω τα patterns το ένα με την Raga Maya Malava Goula και το άλλο 
