@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=ESCbw9Ph9m4&list=RDZnObqYfb-0M&index=13.
 
 (1.12 sec από το video)
 
-// S-R-S-G-R-M-G-R-S--->P-D-P-N-D-Ṡ-N-D-P--->Ṡ-Ṙ-Ṡ-Ġ-Ṙ-Ṁ-Ġ-Ṙ- Ṡ
+*// S-R-S-G-R-M-G-R-S--->P-D-P-N-D-Ṡ-N-D-P--->Ṡ-Ṙ-Ṡ-Ġ-Ṙ-Ṁ-Ġ-Ṙ-Ṡ*
 
  **Pbind(\dur, 0.2, \degree, Pseq([0, 1, 0, 2, 1, 3, 2, 1, 0], 1), \amp, 0.2).play;**
  
@@ -60,11 +60,47 @@ https://www.youtube.com/watch?v=OwPXH4gZitw&list=RDOwPXH4gZitw&start_radio=1.
 
 (φτιάχνω την κλίμακα και με το όνομα που της εχω δώσει italics mayamalavagoula italics θα παίξω τα patterns).
 
-**Scale.all.put(\mayamalavagoula, Scale([0, 1, 4, 5, 7, 8, 11]));**
+**Scale.all.put(\*mayamalavagoula*, Scale([0, 1, 4, 5, 7, 8, 11]));**
 
 **Pbind(\dur,~durs, \degree, Pseq([~pat1, ~pat1 + 4, ~pat1 + 7]), \amp, 0.2,
-	\scale, Scale.mayamalavagoula
+	\scale, Scale.*mayamalavagoula*
 ).play; **
+
+
+
+**Δεύτερο pattern **
+
+(1.44 sec από το video)
+
+*//Ṡ-Ṙ-Ṡ-N-D-N-Ṡ -- > P-D-P-M-G-M-P --> S-R-S-N-D-N-S
+
+**~pat2 = Pseq([2, 3, 2, 1, 0, 1, 2], 1);**
+
+**Pbind(\dur, 0.2, \degree, Pseq([~pat2 + 7, \, \, ~pat2 + 4, \, \, ~pat2]), \amp, 0.2).play;**
+
+(Φτιάχνω το δεύτερο pattern, σαν λίστα 2, 3, 2, 1, 0, 1, 2 το οποίο παίζει μια φορά και το βάζω στη μεταβλητή ~pat2. Το pattern αυτό ξεκινάει από ψηλά. Παίζει το ένα, μετά το άλλο και με 2 παύσεις ενδιάμεσα).
+
+**~durs = Pseq([0.20, 0.20, 0.20, 0.20,  0.20, 0.20, 0.80], inf);**
+
+**Pbind(\dur,~durs , \degree, Pseq([~pat2 + 7, ~pat2 + 4,  ~pat2]), \amp, 0.2).trace.play;**
+
+(Αντικαθιστώ το dur με ένα pattern, όπου η κάθε νότα θα παίρνει την διάρκεια από το pattern και η τελευταία νότα θα  έχει μεγαλύτερη διάρκεια. Χρησιμοποιώ την μεταβλητή ~durs για το pattern. Χρησιμοποιώ το trace μαζί με το play έτσι ώστε να βλέπω στο post window την εκτέλεση του).
+
+Επειδή ήθελα να δοκιμάσω και  μια ακόμα Raga έφτιαξα Shankarabharanam από το video  (2.5 sec)
+https://www.youtube.com/watch?v=OwPXH4gZitw&list=RDOwPXH4gZitw&start_radio=1
+
+(Φτιάχνω την κλίμακα *shankarabharanam*)
+**Scale.all.put(\*shankarabharanam*, Scale([0, 2, 4, 5, 7, 9, 11]));**
+
+**Pbind(\dur,~durs, \degree, Pseq([~pat2 + 7,~pat2 + 4, ~pat2]), \amp, 0.2,
+	\scale, Scale.*shankarabharanam*
+).play;**
+
+Θα τρέξω το ίδιο pattern και με τη κλίμακα *mayamalavagoula* που έχω φτιάξει στο προηγούμενο pattern
+**Pbind(\dur,~durs, \degree, Pseq([~pat2 + 7,~pat2 + 4, ~pat2]), \amp, 0.2,
+	\scale, Scale.*mayamalavagoula*
+).play;**
+
 
 
 
